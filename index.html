@@ -18,12 +18,12 @@
 </div>
     <div class="w-screen flex md:flex-row flex-col justify-center items-stretch sm:px-0 px-1 overflow-x-hidden">
         <!-- Banner Section -->
-        <div class="banner lg:w-full md:w-1/2 h-64 md:h-full">
+        <div class="banner lg:w-full md:w-1/2 ">
             <img src="Image/niramaya 1.1 new size (1).jpg" alt="banner" class="w-full lg:h-full sm:h-full h-full">
         </div>
     
         <!-- Form Section -->
-        <div class="w-full md:w-1/2 bg-[#F6F5F5] flex flex-col justify-between pb-5 ">
+        <div  id="bookingForm" class="w-full md:w-1/2 bg-[#F6F5F5] flex flex-col justify-between pb-5  ">
             <!-- Title and Discounted Price Section -->
             <div class="bg-[#379971] text-white flex justify-between items-center py-2 px-10">
                 <div class="font-semibold md:text-2xl text-lg">Modern Niramaya 1.1</div>
@@ -34,9 +34,20 @@
             </div>
     
             <!-- Test Parameters Section -->
-            <div class="py-2 px-4 text-sm text-gray-600 flex justify-start gap-2">
-                <span class="text-[#565353] font-medium md:text-xl text-lg">Parameters 87 Tests Included</span>
-                <button class="text-blue-500">▼</button>
+            <div class="group">
+                <input type="checkbox" id="toggle" class="hidden peer">
+                <label for="toggle" class="w-full   py-1 text-left text-lg font-semibold flex justify-evenly items-center cursor-pointer">
+                    Parameters 87 Tests Included
+
+                    <svg class="w-5 h-5 text-[#189ED3] transform transition-transform duration-200 group-[.peer:checked+&]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </label>
+
+
+                <div class="hidden px-5 peer-checked:block">
+                    <p>This is the content area for the Parameters 87 Tests. You can add more details or a list of tests here.</p>
+                </div>
             </div>
     
             <!-- Form Title -->
@@ -167,14 +178,14 @@
                     </div>
                     <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded">50% OFF</span>
                 </div>
-                <div class="flex items-center justify-between">
-                    <button class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
+                <a href="#bookingForm"> <div class="flex items-center justify-between">
+                    <button  class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
                     <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </button>
-                </div>
+                </div></a>
             </div>
         </div>
 
@@ -193,14 +204,14 @@
                     </div>
                     <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded">50% OFF</span>
                 </div>
-                <div class="flex items-center justify-between">
+                <a href="#bookingForm"> <div class="flex items-center justify-between">
                     <button class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
                     <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </button>
-                </div>
+                </div></a> 
             </div>
         </div>
 
@@ -219,14 +230,14 @@
                     </div>
                     <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded">50% OFF</span>
                 </div>
-                <div class="flex items-center justify-between">
+                <a href="#bookingForm"> <div class="flex items-center justify-between">
                     <button class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
                     <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </button>
-                </div>
+                </div>  </a>
             </div>
         </div>
 
@@ -245,14 +256,14 @@
                     </div>
                     <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded">50% OFF</span>
                 </div>
-                <div class="flex items-center justify-between">
+                <a href="#bookingForm"><div class="flex items-center justify-between">
                     <button class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
                     <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </button>
-                </div>
+                </div></a>  
             </div>
         </div>
     </div>
@@ -308,7 +319,6 @@
                         <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                 </div>
-
                 <!-- Review Card 2 -->
                 <div class="bg-[#189ED3]  rounded-lg shadow-md overflow-hidden">
                     <div class="p-6">
