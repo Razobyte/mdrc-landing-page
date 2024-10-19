@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Mdrc</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M26TV87');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body class="overflow-x-hidden">
 <!-- Heder section -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M26TV87"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 <div class="w-screen flex justify-between items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-0 overflow-x-hidden bg-white sticky top-0">
     <div class="mb-4 sm:mb-0">
         <img src="./Image/logo.svg" alt="logo" class="w-32 sm:w-40 md:w-48 lg:w-56 max-w-full h-22 object-contain">
@@ -18,7 +32,6 @@
 </div>
     <div class="w-screen flex md:flex-row flex-col justify-center items-stretch sm:px-0 px-1 overflow-x-hidden">
         <!-- Banner Section -->
-      
           <!-- Carousel Wrapper -->
   <div class="relative w-full lg:w-full md:w-1/2 overflow-hidden">
     <!-- Carousel Inner (images) -->
@@ -38,54 +51,41 @@
     </div>
   </div>
 
-          
-    
         <!-- Form Section -->
-        <div  id="bookingForm" class="w-full md:w-1/2 bg-[#F6F5F5] flex flex-col justify-between pb-5  ">
+       
+        <div id="bookingForm" class="w-full md:w-1/2 bg-[#F6F5F5] flex flex-col justify-between pb-5">
             <!-- Title and Discounted Price Section -->
-            <div class="bg-[#379971] text-white flex justify-between  py-2 px-10">
+            <div class="bg-[#379971] text-white flex justify-between items-center py-2 px-10">
                 <div class="font-semibold md:text-2xl text-lg">Modern Niramaya 1.1</div>
-               
                 <div class="text-sm flex gap-5">
                     <div class="block">
-                         <p class="line-through text-white md:text-xl text-lg font-semibold">₹1200</p>
-                        <p class="text-white font-semibold md:text-lg text-base"> 50% Off</p>
+                        <span class="text-white font-bold md:text-2xl text-lg"> ₹599</span>
                     </div>
-                   
-                    <span class="text-white font-bold md:text-2xl text-lg"> ₹599</span>
+                    <span class="text-white font-semibold md:text-base text-base border rounded-md px-2 py-1"> 50% Off</span>
                 </div>
             </div>
     
             <!-- Test Parameters Section -->
             <div class="group">
                 <input type="checkbox" id="toggle" class="hidden peer">
-                <label for="toggle" class="w-full   py-1 text-left text-lg font-semibold flex justify-center gap-2 items-center cursor-pointer">
+                <label for="toggle" class="w-full py-1 text-left text-lg font-semibold flex justify-center gap-2 items-center cursor-pointer">
                     Parameters 61 Tests Included
-
-                    <!-- <svg class="w-5 h-5 text-[#189ED3] transform transition-transform duration-200 group-[.peer:checked+&]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg> -->
                 </label>
-
-
-                <!-- <div class="hidden px-5 peer-checked:block bg-white">
-                    <p>This is the content area for the Parameters 87 Tests. You can add more details or a list of tests here.</p>
-                </div> -->
             </div>
     
             <!-- Form Title -->
             <h2 class="text-center text-[#1160A5] font-bold md:text-xl text-base mb-4">Book Your Test</h2>
     
             <!-- Form Inputs -->
-            <form class="md:space-y-4 space-y-2 md:px-10 px-2">
-                <input type="text" placeholder="*Full Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100">
-                <input type="tel" placeholder="*Mobile Number" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100">
-                <input type="text" placeholder="*Enter City" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100">
+            <form class="md:space-y-4 space-y-2 md:px-10 px-2" onsubmit="showPopup(event)">
+                <input type="text" placeholder="*Full Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100" required>
+                <input type="number" placeholder="*Mobile Number" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100" required>
+                <input type="text" placeholder="*Enter City" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100" required>
     
                 <!-- WhatsApp Opt-in Checkbox -->
-                <div class="flex items-center space-x-2 md:px-0 px-2">
-                    <input type="checkbox" id="whatsapp-opt-in" class="form-checkbox text-green-500 sm:h-5 sm:w-5">
-                    <label for="whatsapp-opt-in" class="text-sm flex items-center">
+                <div class="flex items-center space-x-2 md:px-0">
+                    <input type="checkbox" id="whatsapp-opt-in" class="form-checkbox text-green-500" checked>
+                    <label for="whatsapp-opt-in" class="text-sm flex items-center" aria-checked="true">
                         <a href="https://wa.me/918586988847" target="_blank" class="flex items-center space-x-2">
                             <img src="Image/whatsapp.png" alt="whatsapp" class="h-5 w-5">
                             <span class="md:text-lg text-base font-normal text-[#565353]">Opt-in for WhatsApp updates</span>
@@ -93,10 +93,10 @@
                     </label>
                 </div>
     
-                <!-- Privacy Checkbox -->
                 <div class="flex items-center space-x-2 md:px-0 px-2">
-                    <input type="checkbox" id="privacy-policy" class="form-checkbox sm:h-5 sm:w-5">
-                    <label for="privacy-policy" class="text-xs text-[#565353]">
+                    <!-- Privacy Checkbox -->
+                    <input type="checkbox" id="privacy-policy" class="form-checkbox" checked>
+                    <label for="privacy-policy" class="text-sm text-[#565353]">
                         You hereby affirm & authorise MDRC India to process the personal data as per the Privacy Policy.
                     </label>
                 </div>
@@ -112,6 +112,22 @@
                 <p class="text-center text-xs text-gray-500 mt-2">*Prices are subject to change as per city</p>
             </form>
         </div>
+        <div id="popup" class="modal-backdrop">
+            <div class="modal-content">
+                <button onclick="closePopup()" class="close-button">&times;</button>
+                <div class="success-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <h3 class="modal-title">Success!</h3>
+                <p>Thank you! Our expert will get back to you soon.</p>
+            </div>
+        </div>
+      
+        
+          
+        
     </div>
     
 
@@ -211,7 +227,7 @@
                         <span class="line-through  text-[#8A8383] text-base">₹499</span>
                         <span class="text-xl font-extrabold text-[#565353]">₹399</span>
                     </div>
-                    <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded"> upto 50% OFF</span>
+                    <!-- <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded"> upto 50% OFF</span> -->
                 </div>
                 <a href="#bookingForm"> <div class="flex items-center justify-between">
                     <button  class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
@@ -230,10 +246,10 @@
              <p> Modern  Niramaya 1.1</p>
              
             </div>
-            <div class="bg-red-400 w-fit px-2 py-1">
+            <!-- <div class="bg-red-400 w-fit px-2 py-1">
                 <p class="text-white italic sm:text-sm font-bold "> Bestseller</p>
             </div>
-          
+           -->
             <div class="p-4">
                 <p class="text-[#565353] text-base mb-2">Total no. of Tests : 61</p>
                 <a href="#" class="text-[#1160A5]  font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
@@ -328,11 +344,7 @@
             <img src="./Image//whychhose-icon (1).png" alt="whychhose" class="lg:w-20 lg:h-20 object-contain pb-4" >
             <div class="text-[#189ED3] font-semibold  md:text-2xl xs:text-xl text-base text-center">Led by Top Doctors</div>
         </div>
-
-
     </div>
-
-
 </div>
 <!-- //Our Review Section -->
  <section class="w-screen flex justify-center items-center lg:py-12 sm:py-6 xs:py-6 py-5 px-4 sm:px-6 lg:px-8">
@@ -417,8 +429,8 @@
             </h4>
         </div>
         <a href="https://wa.me/91858698884" target="_blank" class="block">
-            <div class="flex  items-center justify-center bg-[#249535] rounded-lg cursor-pointer">
-                <button class="text-white font-bold sm:text-3xl text-xl mb-3 md:mb-0 md:mr-2 hover:bg-[#1c7e2c] transition-colors duration-300 px-4 py-2 text-center">
+            <div class="flex  items-center justify-center bg-[#249535] rounded-lg cursor-pointer px-5">
+                <button class="text-white font-bold sm:text-3xl text-xl  hover:bg-[#1c7e2c] transition-colors duration-300 py-2 text-center">
                     Chat Now
                 </button>
                 <div class="w-16 h-16 flex justify-center items-center">
