@@ -79,7 +79,7 @@
             <form class="md:space-y-4 space-y-2 md:px-10 px-2" onsubmit="showPopup(event)">
                 <input type="text" placeholder="*Full Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100" required>
                 <input type="number" placeholder="*Mobile Number" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100" required>
-                <input type="text" placeholder="*Enter City" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100" required>
+                <input type="text" placeholder="Enter City" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-100" >
     
                 <!-- WhatsApp Opt-in Checkbox -->
                 <div class="flex items-center space-x-2 md:px-0">
@@ -210,119 +210,117 @@
 </section>
 <!-- other details -->
 
-<div class="w-screen flex   flex-col justify-center items-center md:px-4 px-2 sm:py-8 py-3">
-    <h2 class="lg:text-5xl  sm:text-3xl xs:text-2xl text-2xl font-bold mb-6 text-[#565353] text-center">Diwali Special Packages</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4 sm:gap-6 gap-3">
-        <!-- MRI - Brain Card -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="bg-[#1160A5] sm:text-xl text-base font-bold text-white sm:p-5 p-2 ">
+
+<div class="w-screen flex flex-col justify-center items-center md:px-4 px-2 sm:py-8 py-3">
+    <h2 class="lg:text-5xl sm:text-3xl xs:text-2xl text-2xl font-bold mb-6 text-[#565353] text-center">
+        Diwali Special Packages
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6 gap-3">
+        <!-- Modern Fit India Package Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onclick="document.getElementById('bookingForm').scrollIntoView({ behavior: 'smooth' });">
+            <div class="bg-[#1160A5] sm:text-xl text-base font-bold text-white sm:p-5 p-2">
                 Modern Fit India Package
             </div>
             <div class="p-4">
-                <p class="text-[#565353] text-base mb-2">Total no. of Tests : 40</p>
-                <a href="#" class="text-[#1160A5]  font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
+                <p class="text-[#565353] text-base mb-2">Total no. of Tests: 40</p>
+                <a href="#" class="text-[#1160A5] font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
                 <div class="flex items-center justify-between mb-3">
                     <div>
-                        <span class="line-through  text-[#8A8383] text-base">₹499</span>
+                        <span class="line-through text-[#8A8383] text-base">₹499</span>
                         <span class="text-xl font-extrabold text-[#565353]">₹399</span>
                     </div>
-                    <!-- <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded"> upto 50% OFF</span> -->
                 </div>
-                <a href="#bookingForm"> <div class="flex items-center justify-between">
-                    <button  class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
+                <div class="flex items-center justify-between">
+                    <button class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
                     <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </button>
-                </div></a>
+                </div>
             </div>
         </div>
 
-        <!-- MRI - Lumbar Spine Card -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="bg-[#1160A5] text-white sm:text-xl text-base  sm:p-5 p-2 font-bold">
-             <p> Modern  Niramaya 1.1</p>
-             
+        <!-- Modern Niramaya 1.1 Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onclick="document.getElementById('bookingForm').scrollIntoView({ behavior: 'smooth' });">
+            <div class="bg-[#1160A5] text-white sm:text-xl text-base sm:p-5 p-2 font-bold">
+                Modern Niramaya 1.1
             </div>
-            <!-- <div class="bg-red-400 w-fit px-2 py-1">
-                <p class="text-white italic sm:text-sm font-bold "> Bestseller</p>
-            </div>
-           -->
             <div class="p-4">
-                <p class="text-[#565353] text-base mb-2">Total no. of Tests : 61</p>
-                <a href="#" class="text-[#1160A5]  font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
+                <p class="text-[#565353] text-base mb-2">Total no. of Tests: 61</p>
+                <a href="#" class="text-[#1160A5] font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
                 <div class="flex items-center justify-between mb-3">
                     <div>
-                        <span class="line-through  text-[#8A8383] text-base">₹1199</span>
+                        <span class="line-through text-[#8A8383] text-base">₹1199</span>
                         <span class="text-xl font-extrabold text-[#565353]">₹599</span>
                     </div>
                     <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded">50% OFF</span>
                 </div>
-                <a href="#bookingForm"> <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between">
                     <button class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
                     <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </button>
-                </div></a> 
+                </div>
             </div>
         </div>
 
-        <!-- MRI - Screening of Whole Spine Card -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="bg-[#1160A5] sm:text-xl text-base  text-white sm:p-5 p-2 font-bold">
-                Modern  Niramaya 1.3
+        <!-- Modern Niramaya 1.3 Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onclick="document.getElementById('bookingForm').scrollIntoView({ behavior: 'smooth' });">
+            <div class="bg-[#1160A5] sm:text-xl text-base text-white sm:p-5 p-2 font-bold">
+                Modern Niramaya 1.3
             </div>
             <div class="p-4">
-                <p class="text-[#565353] text-base mb-2">Total no. of Tests : 93</p>
-                <a href="#" class="text-[#1160A5]   font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
+                <p class="text-[#565353] text-base mb-2">Total no. of Tests: 93</p>
+                <a href="#" class="text-[#1160A5] font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
                 <div class="flex items-center justify-between mb-3">
                     <div>
-                        <span class="line-through  text-[#8A8383] text-base">₹4600</span>
+                        <span class="line-through text-[#8A8383] text-base">₹4600</span>
                         <span class="text-xl font-extrabold text-[#565353]">₹2300</span>
                     </div>
                     <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded">50% OFF</span>
                 </div>
-                <a href="#bookingForm"> <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between">
                     <button class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
                     <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </button>
-                </div>  </a>
+                </div>
             </div>
         </div>
 
-        <!-- MRI Brain with Contrast Card -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="bg-[#1160A5] sm:text-xl text-base  text-white sm:p-5 p-3 font-bold">
-                Modern  Niramaya 1.4
+        <!-- Modern Niramaya 1.4 Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onclick="document.getElementById('bookingForm').scrollIntoView({ behavior: 'smooth' });">
+            <div class="bg-[#1160A5] sm:text-xl text-base text-white sm:p-5 p-2 font-bold">
+                Modern Niramaya 1.4
             </div>
             <div class="p-4">
-                <p class="text-[#565353] text-base mb-2">Total no. of Tests : 94</p>
-                <a href="#" class="text-[#1160A5]  font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
+                <p class="text-[#565353] text-base mb-2">Total no. of Tests: 94</p>
+                <a href="#" class="text-[#1160A5] font-normal text-sm hover:underline mb-3 inline-block">Know More</a>
                 <div class="flex items-center justify-between mb-3">
                     <div>
-                        <span class="line-through  text-[#8A8383] text-base">₹5100</span>
+                        <span class="line-through text-[#8A8383] text-base">₹5100</span>
                         <span class="text-xl font-extrabold text-[#565353]">₹2550</span>
                     </div>
                     <span class="bg-green-50 text-[#1D7FBB] text-xs font-semibold px-2 py-1 rounded">50% OFF</span>
                 </div>
-                <a href="#bookingForm"><div class="flex items-center justify-between">
+                <div class="flex items-center justify-between">
                     <button class="bg-gradient-to-r from-[#1160A5] to-[#189ED3] text-white px-4 py-1 text-base font-extrabold rounded hover:bg-blue-700">BOOK</button>
                     <button class="bg-red-500 text-white p-1 rounded hover:bg-red-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </button>
-                </div></a>  
-            </div>
+                </div>
+                </div>
         </div>
-    </div>
+        </div>
 </div>
+
 <!-- why chhose us section -->
 <div class="w-screen flex  bg-[#f6f6f6] flex-col justify-center items-center md:px-4 px-0 sm:py-16 py-5">
     <h2  class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-[#565353] md:mb-14 xs:mb-5 mb-5">Why choose us</h2>
